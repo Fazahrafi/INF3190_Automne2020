@@ -1,0 +1,42 @@
+
+
+hr.complete{
+	width:100%;
+	background-color: navy;
+	height: 2px;
+	
+}
+div.elemform{
+	display:block;
+}
+
+legend{
+	color:yellow;
+}
+
+input[type="text"],input[type="radio"]{
+	margin: 5px;
+}
+
+div.submitreset{
+	width:100%;
+	margin-left: 20%;
+	
+}
+div.submitreset input{
+	width:20%;
+	height:35px;
+	margin-left: 0.5%;
+	background-color: #FFE361;
+	color:white;
+	font-size: large;
+}
+
+div.submitreset input[type="reset"]{
+	background-color: #808080;
+
+	}
+	label{
+		margin-left: 20%;
+	}
+

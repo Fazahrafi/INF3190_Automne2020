@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+     <head>
+     
+     <a href="index.html"><--Retour à l'accueil
+     </a>
+      
+     <meta charset="utf-8">
+      <meta http-equiv="X-UA-compatible" content="IE=edge">
+      <title>CONNEXION</title>
+      <link rel="stylesheet" type="text/css" href="../CSS/cssStyle.css"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+        
+     <hr>      
+    </head>
+      <body>
+      </br>
+    </br>
+    <img src="../pictures/banniere.jpg" class="f">
+    <div style="width:100%;text-align: center" class = "lemenu">
+        <a href="nouveautes.html" class="menubouton"> NOUVEAUTÉS</a>
+        <a href="promotions.html" class="menubouton"> PROMOTIONS</a>
+        <a href="collections.html" class="menubouton"> COLLECTIONS</a>
+        
+        <a href="connexion.html" class="menubouton"> CONNEXION</a>
+        
+    </div>
+
+    </br>
+      
+        <h3>Connexion au compte client</h3>
+    </br>
+
+    <div class="container-fluid">
+
+        <form action="../PHP/administration.php" enctype="multipart/form-data" method="post">
+
+            <fieldset>
+                <div class="elemform">
+                    <label for="codePerm1">Nom d'utilisateur  :   </label>
+                    <input type="text" name="codePerm1" id="codePerm1" size="16" maxlength="10" pattern="[A-Za-z]{5,8}[0-9]{2}" required="required" placeholder="5 a 8 lettres et 2 chiffres">
+                </div>
+                <div class="elemform">
+                    <label for="codePerm2">Mot de passe : &ensp;&ensp;</label>
+                    <input type="text" name="codePerm1" id="codePerm2" size="16" maxlength="12" pattern="[A-Za-0-9+-*?]{8,12}" placeholder=" 8 à 12 charactères">
+                </div>
+                <div class="submitreset">
+                    <input type="submit" value="Connexion">
+
+
+                    <input type="reset" value="Annuler">
+                    <br>
+                    <input type="checkbox" name="email" value="Email">
+                    <label for="email"> Je veux recevoir les prochaines promotions par email.</label><br>
+            </fieldset>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
